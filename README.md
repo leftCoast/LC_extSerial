@@ -1,21 +1,20 @@
 # LC_extSerial
 
- Alright, why do I want this? What this? How do I use it?
+ Alright, why do I want this? What is this? How do I use it?
  
- If you have issues with larger chunks of data coming into your Serial buffer and
- overrunning it's fixed 65 byte buffer, causing all sorts of headaches, then this is for
- you!
+ If you have issues with larger chunks of data coming into your Serial port and
+ overrunning it's fixed 65 byte buffer? Then this is for you!
 
- This glues a buffer extension to the original input buffer. Allowing larger chunks of
- data to be buffered, while your program gets around to reading it. Think of it like an
- employee with a shovel. They spend all their time shoveling data out of the serial
- buffer, for you to read at your leisure.
+ This glues a buffer extension to the original Serial input buffer. Allowing larger
+ chunks of data to be buffered, while your program gets around to reading it. Think
+ of it like an employee with a shovel. They spend all their time shoveling data out
+ of the serial buffer, for you to read at your leisure.
 
  This doesn't actually change your Serial port in any way. It just keeps it cleared out
  as much as possible. Setting up and Writing to your Serial port is unaffected. Do this
- like you always do. Just when it comes to reading you're serial port, use these calls.
+ like you always do. Just, when it comes to reading you're serial port, use these calls.
 
-
+```c++
 #include  <extSerial.h>				// Including the library.
 
 extSerial mySerial(&Serial);			// Create by choosing your port.
@@ -42,7 +41,7 @@ void loop(void) {
 		Serial.print(aChar);		// Original calls for output.
 	}
 }
-
+```
 
  NOTE: DO NOT USE delay() IN YOUR CODE! THIS WILL STOP EVERYTHING. BUT, NO FEAR! WE
  SUPPLY YOU WITH A sleep() call that acts just like delay for you, but does NOT stop

@@ -30,7 +30,7 @@ void setup(void) {
 }
 
 
-// We'll do a simple "echo what was typed" exa.mple here.
+// We'll do a simple "Echo what was typed" example here.
 void loop(void) {
 
 	char	aChar;

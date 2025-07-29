@@ -12,7 +12,7 @@
 
  This doesn't actually change your Serial port in any way. It just keeps it cleared out
  as much as possible. Setting up and Writing to your Serial port is unaffected. Do this
- like you always do. Just, when it comes to reading you're serial port, use these calls.
+ like you always do. Just, when it comes to reading, use these calls.
 
 ```c++
 #include  <extSerial.h>				// Including the library.

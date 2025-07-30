@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For extSerial
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+extSerial   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+extSerial   KEYWORD2
+~extSerial	KEYWORD2
+begin       KEYWORD2
+read        KEYWORD2
+grabData    KEYWORD2
+idle        KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DEF_BYTES_ADDED  LITERAL1
+ 
